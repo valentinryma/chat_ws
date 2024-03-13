@@ -17,4 +17,4 @@ npm start
 ```    
 
 ## Demo
-[Demo](https://shine-knowledgeable-queen.glitch.me)
+[App Chat WebSocket](https://steadfast-shy-cinnamon.glitch.me)
