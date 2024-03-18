@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    {{#each styles}}
+    <link id="estilos" rel="stylesheet" href="/css/{{this}}">
+    {{/each}}
+</head>
+
+<body>
+    {{{body}}}
+
+    {{!-- Sweet Alert --}}
+    {{#if useSweetAlert}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {{/if}}
+
+    {{!-- WS --}}
+    {{#if useWS}}
+    <script src="/socket.io/socket.io.js"></script>
+    {{/if}}
+
+    {{!-- Scripts --}}
+    {{#each scripts}}
+    <script src="/js/{{this}}"></script>
+    {{/each}}
+</body>
+
+</html>
